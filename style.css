@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    background-image: url("wallpaper.jpg");
+}
+
+#containers {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+#containers p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+hr {
+    color: white;
+}
+
+#chaudFroidGagner {
+    height: 3rem;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+button:hover {
+    background: darkgrey;
+}
+
+#playerNumber {
+    padding: 1rem;
+    text-align: center;
+}
+
+#restart {
+    border: solid orange 0.3rem;
+    box-shadow: orangered 0.2rem 0.2rem;
+    margin: 3rem;
+    position: relative;
+    left: 20%;
+}
+
+#envois {
+    margin: 0.5rem;
+    border: solid greenyellow 0.3rem;
+    box-shadow: green 0.2rem 0.2rem;
+}
+
+#numberListe {
+    padding: 2rem 0;
+    font-size: 1.1rem;
+    height: 5rem;
+}

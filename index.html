@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nombre juste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="containers">
+        <h1>Nombre juste</h1>
+        <p>Le jeu choisit aléatoirement un nombre entre 1 et 100.<br>
+            Retrouve ce nombre. Tu as 10 vie. Il t'en reste: <span id="chance">10</span> !
+        </p>
+        <hr>
+
+        <!-- Image: chaud froid -->
+        <div id="life">
+        </div>
+
+        <div id="chaudFroidGagner">
+        </div>
+
+        <!-- Entrée nombre joueur & envois -->
+        <div id="nombreEnvois">
+            <div>
+                <input type="text" id="playerNumber">
+            </div>
+            <div>
+                <button id="envois">Envois</button>
+            </div>
+        </div>
+
+        <!-- Nombres proposer -->
+        <div id="numberListe">
+
+        </div>
+
+        <!-- Restart -->
+        <div>
+            <button id="restart">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
