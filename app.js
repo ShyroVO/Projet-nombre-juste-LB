@@ -24,15 +24,33 @@ boutonEnvois.addEventListener("click", function () {
 
     else if (playerNumberValue <= (randomNumber - 10) || playerNumberValue >= (randomNumber+10)) {
         chaudFroidGagner.innerHTML = "Froid";
+        chaudFroidGagner.style.color = "lightblue";
         numberListe.innerHTML += playerNumberValue + ", ";
-
         life--;
+
+        if (playerNumberValue < randomNumber) {
+            chaudFroidGagner.innerHTML += ", c'est trop petit.";
+        }
+
+        else if (playerNumberValue > randomNumber) {
+            chaudFroidGagner.innerHTML += ", c'est trop grand.";
+        }
+
     }
 
     else if (playerNumberValue > randomNumber || playerNumberValue < randomNumber) {
         chaudFroidGagner.innerHTML = "Chaud";
+        chaudFroidGagner.style.color = "red";
         numberListe.innerHTML += playerNumberValue + ", ";
         life--;
+
+        if (playerNumberValue < randomNumber) {
+            chaudFroidGagner.innerHTML += ", c'est un peu petit!";
+        }
+
+        else if (playerNumberValue > randomNumber) {
+            chaudFroidGagner.innerHTML += ", c'est un peu grand!";
+        }
     }
 
     else {
